@@ -33,6 +33,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 79px;
+    margin-bottom: 30px;
 }
 
 header img {
@@ -44,7 +45,7 @@ header img {
 nav a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 20px;
+    padding-top: 20%;
     }
 
 
@@ -72,6 +73,7 @@ a {
 .headline h1,   
 .headline p {
     margin: 8px 0;
+    
 }
 
 /*************************  Barre de Recherche   *******************/
@@ -132,38 +134,37 @@ input[type="text"] {
     flex-wrap: wrap;
     font-size: 17px;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 30px;
     align-items: center;
+    gap: 15px;
 }
 
-.filter-bar a {
-  display:flex;
+.filter-bar button {
   border: 2px solid #D9D9D9;
   border-radius: 25px;
-  padding: 4px 19px;
-  height: 40px;
+  padding: 0px 15px;
+  height: 50px;
   align-items: center ;
+  background-color: white;
+  font-weight: bold;
+  font-size: 17px;
 }
  
-.filter-bar p {
-    
-    margin-right: 15px; /* Ajoute une marge à droite entre les éléments */
-    
-}
 
-.filter-bar a:hover {
+.filter-bar button:hover {
     background-color: #DEEBFF;
     cursor: default;  /* Laisse le curseur d'origine */
-    
 }
 
 .filter-bar i {
     padding: 0px 10px;
+    padding-left: 3px;
 }
 
 /************************* INFO  *****************************/
 
 .info {
+    margin-top: 20px;
     display: flex;
     margin-bottom: 30px;
     align-items: center;
@@ -178,7 +179,7 @@ input[type="text"] {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .info p {
@@ -229,7 +230,8 @@ input[type="text"] {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
 }
 
 
@@ -275,7 +277,7 @@ input[type="text"] {
 
 .conteneur {
     display: flex;
-    justify-content: space-around ;
+    justify-content: space-between ;
     flex-wrap: wrap;
 }
 
@@ -283,7 +285,8 @@ input[type="text"] {
     display: flex;
     font-weight: 700;
     font-size: 18px;
-    padding-top: 10px;
+    margin-top: 30px;
+    
 }
 
 /****** Populaires ***********/
@@ -334,12 +337,16 @@ input[type="text"] {
 
 /************ Activités ****************/
 
+.activites {
+    margin-left: 20px;
+}
+
 .activites-card
  {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    padding-top: 30px;
+    padding-top: 20px;
     margin-bottom: 65px ;
 }
 
@@ -364,21 +371,29 @@ input[type="text"] {
     padding-left: 19px;
 }
 
+
+
 /******************* Footer *********************/
 
 footer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     background: var(--Grey, #F2F2F2);
-    padding: 20px;
-    gap: 20px;
+    padding-left: 2%;
+    padding-right: 23%;
+}
+
+.lien-footer H3 {
+    margin-bottom: 3%;
 }
 
 .lien-footer article{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
+
 
 
 
