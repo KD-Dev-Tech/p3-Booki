@@ -28,7 +28,7 @@ body {
 
 /*************************  En Tete de page   ************************/
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,25 +38,23 @@ header{
 
 header img {
     width: 61px;
-    height: 19px;
-    
+    height: 19px;    
 }
 
 nav a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 20%;
+    padding-top: 20px;
     }
 
-
-nav ul{
+nav ul {
     display: flex;
     margin: 16px;             /* espacement interne */
     padding: 0;               /* espacement externe */
     height: 44px;
 }
 
-nav li{
+nav li {
     padding-top: 16px;
     margin-left: 68px;
     padding: 0;
@@ -68,12 +66,9 @@ a {
     text-decoration: none;
 }
 
-
-
 .headline h1,   
 .headline p {
-    margin: 8px 0;
-    
+    margin: 8px 0;  
 }
 
 /*************************  Barre de Recherche   *******************/
@@ -85,17 +80,17 @@ a {
 }
 
 .localisation-icone i {
- display: flex;
- border: 1px solid var(--main-bg-color);
- border-radius: 15px 0px 0px 15px;
- border-right: 0px;
- background-color: var(--main-bg-color);
- height: 52px;
- color: black;
- font-size: 20px;
- align-items: center;
- padding-left: 20px;
- padding-right: 20px;
+    display: flex;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 15px 0px 0px 15px;
+    border-right: 0px;
+    background-color: var(--main-bg-color);
+    height: 52px;
+    color: black;
+    font-size: 20px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 input[type="text"] {
@@ -134,20 +129,20 @@ input[type="text"] {
     flex-wrap: wrap;
     font-size: 17px;
     font-weight: bold;
-    padding-top: 30px;
+    padding-top: 35px;
     align-items: center;
     gap: 15px;
 }
 
-.filter-bar button {
-  border: 2px solid #D9D9D9;
-  border-radius: 25px;
-  padding: 0px 15px;
-  height: 50px;
-  align-items: center ;
-  background-color: white;
-  font-weight: bold;
-  font-size: 17px;
+.filtres {
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 0px 15px;
+    height: 50px;
+    align-items: center ;
+    background-color: white;
+    font-weight: bold;
+    font-size: 17px;
 }
  
 
@@ -166,7 +161,7 @@ input[type="text"] {
 .info {
     margin-top: 20px;
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     align-items: center;
 }
 
@@ -186,8 +181,7 @@ input[type="text"] {
     margin: 10px;
  }
 
-
- /*********************************************************************/
+/*********************************************************************/
 
 .section-title {
     margin: 0;
@@ -222,7 +216,6 @@ input[type="text"] {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .hebergements-and-populaires section {
@@ -249,12 +242,10 @@ input[type="text"] {
 }
 
 .hebergements .card-content {
-   
-    padding: 0px 15px ;
+   padding: 0px 15px ;
 }
 
 .hebergements .card {
-
     width: 240px;
     height: 192px;
     padding-bottom: 15px;
@@ -286,7 +277,6 @@ input[type="text"] {
     font-weight: 700;
     font-size: 18px;
     margin-top: 30px;
-    
 }
 
 /****** Populaires ***********/
@@ -357,7 +347,6 @@ input[type="text"] {
     width: 100%;
     height: 100%;
     object-fit: cover;
- 
 }
  .activites .card {
     padding: 0;
@@ -391,21 +380,20 @@ footer {
 .lien-footer article{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
-
-
-
-
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
+    
+    .filter-bar h3 {
+        width: 100%;
+    }
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -416,7 +404,6 @@ footer {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
@@ -436,17 +423,107 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites .card {
+        width: 190px;
+        height: 210px;
+    }
+
+    .activites img {
+        height: 200px;
+    }
+
+   
+
+     footer {
+        padding-right: 20%;
+     }
+
 }
+
+
+
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     
-    .search-button span.search-icon i {
-                display: inline; /* Afficher l'icône sur mobile */
-            }
-
-            .search-button span.text {
-                display: none; /* Masquer le texte "Rechercher" sur mobile */
-            }
     
+    body {
+        width: 100%; ;
+    }
+    
+    .main-container {
+        padding: 0px ;
+    }
+
+    /*******************************************************/
+
+    h1 {
+        font-size: 22px;
+    }
+
+    header {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 115px;
+    }
+
+    header img {
+        padding: 30px;
+    }
+
+    nav a:hover {
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 15px;
+        border-top: none;
+        
+    }
+
+    nav li {
+        display: block;
+        padding-right: 70px;
+        margin-left: 35px;
+    }
+
+    /*************************************************/
+    
+    .info-group {
+        padding: 0px 15px;
+    }
+
+    .search-button {
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    
+    .search-button span.search-icon i {
+        display: inline; /* Afficher l'icône sur mobile */
+    }
+
+    .search-button span.text {
+        display: none; /* Masquer le texte "Rechercher" sur mobile */
+     }
+
+     .filter-bar h3 {
+        margin: 0px;
+        padding-top: 0;
+        font-size: 18px;
+    }
+
+    .filtres {
+        font-size: 14px;
+        width: 162px;
+        text-align: start;
+     }
+
+/**********************************************************/
+
+
+
+
+
+
 }
