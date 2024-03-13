@@ -245,8 +245,6 @@ input[type="text"] {
 
 .hebergements .card {
     width: 30%;
-    
-    
     margin-top: 30px;
 }
 
@@ -261,7 +259,6 @@ input[type="text"] {
 
 .hebergements .card-rating  {
     margin-top: 8px;
-    
 }
 
 .conteneur {
@@ -384,7 +381,6 @@ footer {
     justify-content: space-between;
     background: var(--Grey, #F2F2F2);
     padding-left: 2%;
-    padding-right: 23%;
     padding-bottom: 20px;
     margin-top: 30px;
 }
@@ -397,9 +393,13 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+    width: 100%;
 }
 
+.lien-footer {
+    width: 30%;
+    
+}
 
 
 /************** Media queries ***********/
@@ -410,58 +410,60 @@ footer {
     
     
 
-    .filter-bar h3 {
-        width: 100%;
-        margin: 0;
-    }
-    .filtres {
-        font-size: 16px;
-    }
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
+.filter-bar h3 {
+    width: 100%;
+    margin: 0;
+}
+    
+.filtres {
+     font-size: 16px;
+}
+    
+.hebergements-and-populaires {
+    flex-direction: column;
+}
 
-    .hebergements {
-        width: 100%;
-    }
+.hebergements {
+    width: 100%;
+}
 
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
+.populaires {
+    width: 100%;
+    margin-top: 50px;
+}
 
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-    .populaires-cards a {
-        width: 30%;
+.populaires-cards a {
+     width: 30%;
         
-    }
+}
 
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
+.populaires-cards .card-title {
+    font-size: 14px;
+}
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
+.populaires-cards .card-subtitle {
+    font-size: 13px;
+}
 
-    .activites-card a {
-        height: 270px;
-    }
+.activites-card a {
+    height: 270px;
+}
 
-    .activites-card .card img {
-        height: 200px;
-    }
+.activites-card .card img {
+    height: 200px;
+}
    
 
-     footer {
-        padding-right: 20%;
-        margin-top: 30px;
-     }
+footer {
+    
+    margin-top: 30px;
+ }
 
 }
 
@@ -470,204 +472,203 @@ footer {
 
 @media (max-width: 767.98px) {
     
-     .main-container {
-        padding: 0px ;
-        display: grid;
-    }
+.main-container {
+    padding: 0px ;
+    display: grid;
+}
     
-    body {
-        width: 100%; ;
-    }
+body {
+    width: 100%; ;
+}
     
-   
+   /********************* Haut de page ***************************/
 
-    /********************* Haut de page ***************************/
+h1 {
+    font-size: 22px;
+}
 
-    h1 {
-        font-size: 22px;
-    }
+header {
+    flex-direction: column;
+    height: 115px;    
+}
 
-    header {
-        flex-direction: column;
-        height: 115px;    
-    }
+header img {
+    padding: 30px;
+}
 
-    header img {
-        padding: 30px;
-    }
+header nav {
+    width: 100%;
+}
 
-    header nav {
-        width: 100%;
-    }
-    .menu ul {
-        width: 100%;
-        height: 36px;
-        margin: 0;
-        gap: 0;
-    }
+.menu ul {
+    width: 100%;
+    height: 36px;
+    margin: 0;
+    gap: 0;
+}
     
-    .menu li {
-        width: 100%;
-        text-align: center;
-        border-bottom: 2px solid #F2F2F2;
-    }
+.menu li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #F2F2F2;
+}
     
-    li:hover {
-        border-bottom: 2px solid #0065FC;
-        padding-bottom: 15px;
-    }
+li:hover {
+    border-bottom: 2px solid #0065FC;
+    padding-bottom: 15px;
+}
     
-    .menu a:hover {
-       border-top: none; 
-    }
+.menu a:hover {
+    border-top: none; 
+}
     
     
 
     /******************* Info Group ******************************/
     
-    .info-group {
-        padding: 0px 15px;
-    }
+.info-group {
+    padding: 0px 15px;
+}
 
-    .search-bar {
-        width: 100%;
-    }
-    .search-button {
-        border-radius: 15px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
+.search-bar {
+    width: 100%;
+}
+
+.search-button {
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
     
-    .search-button span.search-icon i {
-        display: inline; /* Afficher l'icône sur mobile */
-    }
+.search-button span.search-icon i {
+    display: inline; /* Afficher l'icône sur mobile */
+}
 
-    .search-button span.text {
-        display: none; /* Masquer le texte "Rechercher" sur mobile */
-     }
+.search-button span.text {
+    display: none; /* Masquer le texte "Rechercher" sur mobile */
+}
+   
+.filter-bar h3 {
+    margin: 0px;
+    padding-top: 0;
+    font-size: 18px;
+}
 
-     input[type="text"] {
-        width: 100%;
-     }
-
-     .filter-bar h3 {
-        margin: 0px;
-        padding-top: 0;
-        font-size: 18px;
-    }
-
-    .filtres {
-        font-size: 14px;
-        width: 45%;
-        text-align: start;
-     }
+.filtres {
+    font-size: 14px;
+    width: 45%;
+    text-align: start;
+}
 
 /********************** Section hebergement & populaire ************/
 
-    .populaires-cards .card-title {
-        font-size: 16px;
+.populaires-cards .card-title {
+    font-size: 16px;
 }
 
-    .populaires-cards .card-subtitle {
-        font-size: 14px;
+.populaires-cards .card-subtitle {
+    font-size: 14px;
 }
 
-    .hebergements-and-populaires {
-        flex-direction: column-reverse;
+.hebergements-and-populaires {
+    flex-direction: column-reverse;
     
 }
 
-    .hebergements-and-populaires section {
-        padding: 30px 20px;
-        border-radius: unset;
+.hebergements-and-populaires section {
+    padding: 30px 20px;
+    border-radius: unset;
 }
 
 /************************* Section Populaires ********************/
 
-    .populaires {
-        margin-top: 0;
-    }
-
-    .populaires-cards {
-        display: block;
+.populaires {
+    margin-top: 0;
 }
 
-    .populaires-cards .card {
-        margin-top: 15px;
+.populaires-cards {
+    display: block;
+}
+
+.populaires-cards .card {
+    margin-top: 15px;
 }
 
 /********************** Section hebergement  *********************/
 
-    .hebergements .card-subtitle {
-        font-size: 14px;
+.hebergements .card-subtitle {
+    font-size: 14px;
 }
 
-    .hebergements {
-        background-clip: text; /***** Appparence élément *****/
+.hebergements {
+    background-clip: text; /***** Appparence élément *****/
 }
 
-    .hebergements .card {
-        width: 100%;
-        margin-top: 15px;
+.hebergements .card {
+    width: 100%;
+    margin-top: 15px;
 }
 
-    .afficher {
-        margin-top: 15px;
+.afficher {
+    margin-top: 15px;
 }
 
 /***************** Section Activités ***********************/
 
-    .activites h2 {
-        font-size: 22px;
-        margin-bottom: 30px;
+.activites h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
 }
 
-    .activites {
-        margin: 0;
-        
+.activites {
+    margin: 0;     
 }
 
-    .activites-card {
-        width: 100%;
-        gap: 15px;
-        padding: 0;
-        margin: 0;
-        flex-direction: column;
+.activites-card {
+    width: 100%;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
 }
 
-    .activites .card {
-        width: 100%;
-        height: 200px;
-        padding: 0;
+.activites .card {
+    width: 100%;
+    height: 200px;
+    padding: 0;
 }
-    .activites-card .card img {
-        height: 141px
-}
-
-    .activites-card a {
-        width: 100%;
-        height: auto;
+    
+.activites-card .card img {
+    height: 141px
 }
 
-    .activites img {
-        height: 141px;
+.activites-card a {
+    width: 100%;
+    height: auto;
+}
+
+.activites img {
+    height: 141px;
 }
 
 /***************** Pied de page ******************************/
 
-    footer {
-        display: flex;
-        flex-direction: column;
-        margin-top: 35px ;
-        padding: 30px;
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px ;
+    padding: 30px;
 }
 
-    .lien-footer h3 {
-        margin: 0;
+.lien-footer h3 {
+    margin: 0;
 }
 
-    .lien-footer article {
-        margin-bottom: 50px;
-        gap: 15px;
+.lien-footer article {
+    margin-bottom: 50px;
+    gap: 15px;
 }
 
+.lien-footer {
+    width: 100%;
+}
 }
